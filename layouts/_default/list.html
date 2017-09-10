@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+	{{ partial "sidebar.html" . }}
+
+	{{ if eq (default true .Site.Params.Navbar) true }}
+		{{ partial "navbar.html" . }}
+	{{ end }}
+
+	<div class="content">
+        {{ range .Data.Pages }}
+        	<div class="post-container">
+		        <div class="post">
+		          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+		          <time class="post-time">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+		          <span class="clear"></span>
+		          <div class="post-summary">
+		          	{{ .Summary }}
+		          </div>
+		        </div>
+	        </div>
+        {{ end }}
+	</div>
+</body>
+</html>

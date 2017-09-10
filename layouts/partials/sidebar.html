@@ -1,0 +1,29 @@
+<div class="sidebar">
+	<div class="header-main">
+		<img class="header-image" src="{{ default "//via.placeholder.com/120x120?text=Header" .Site.Params.Image120 }}" />
+		<img class="header-image large" src="{{ default "//via.placeholder.com/240x240?text=Header+2" .Site.Params.Image240 }}" />
+	</div>
+
+	<div class="header-side">
+		<h2 class="header-name">{{ .Title}}</h2>
+
+		<div class="header-description">
+			{{ with .Site.Params.Description}}{{ . | markdownify }}{{ end }}
+		</div>
+	</div>
+
+	{{ if isset .Site.Params "extrapartialpath" }}
+	<div class="header-extra">
+		{{ partial .Site.Params.ExtraPartialPath . }}
+	</div>
+	{{ end }}
+	{{ if isset .Site.Params "socialicons" }}
+	<div class="header-icons">
+		<ul class="header-icon-list">
+		      {{ range .Site.Params.socialIcons }}
+		        <li><a href="{{.url}}"><i class="{{.iconClass}}" aria-hidden="true"></i></a></li>
+		      {{ end }}
+		</ul>
+	</div>
+    {{ end }}
+</div>
