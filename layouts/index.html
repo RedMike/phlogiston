@@ -13,6 +13,7 @@
 
 	<div class="content">
         {{ range .Data.Pages }}
+        	{{ if or (not (isset $.Site.Params "frontpagecategories")) (in $.Site.Params.FrontPageCategories .Section) }}
         	<div class="post-container">
 		        <div class="post">
 		          <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -23,6 +24,7 @@
 		          </div>
 		        </div>
 	        </div>
+	        {{ end }}
         {{ end }}
 	</div>
 </body>
