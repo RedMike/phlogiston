@@ -2,7 +2,9 @@
 	<ul class="navbar-menu">
 		<li><a href="/">Home</a></li>
 		{{ range .Site.Sections }}
+			{{ if or (not (isset $.Site.Params "navbarcategories")) (in $.Site.Params.NavbarCategories .Section) }}
 			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
 		{{ end }}
 	</ul>
 </div>
