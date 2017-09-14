@@ -12,11 +12,10 @@
 		</div>
 	</div>
 
-	{{ if isset .Site.Params "extrapartialpath" }}
 	<div class="header-extra">
-		{{ partial .Site.Params.ExtraPartialPath . }}
+		{{ partial "sidebar-extra.html" }}
 	</div>
-	{{ end }}
+
 	{{ if isset .Site.Params "socialicons" }}
 	<div class="header-icons">
 		<ul class="header-icon-list">
