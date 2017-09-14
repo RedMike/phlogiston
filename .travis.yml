@@ -1,0 +1,18 @@
+sudo: required
+os:
+  - trusty
+language: ruby
+rvm:
+  - 2.3.0
+env:
+  - TRAVIS_NODE_VERSION="6"
+install:
+  - brew update
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+  - npm install
+  - brew update && brew install hugo
+script:
+  - cd exampleSite
+  - mkdir themes
+  - ln -s ../../ themes/phlogiston
+  - hugo
