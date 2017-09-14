@@ -1,6 +1,6 @@
 sudo: required
 os:
-  - trusty
+  - osx
 language: ruby
 rvm:
   - 2.3.0
