@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
-date: 2017-09-10T14:31:27+01:00
-draft: true
+date: 2017-09-12T14:31:27+01:00
 ---
 
 Hello world!

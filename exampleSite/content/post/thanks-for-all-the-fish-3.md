@@ -1,7 +1,6 @@
 ---
 title: "Thanks for All the Fish"
 date: 2017-09-10T14:31:37+01:00
-draft: true
 ---
 
 This is a second post to test with, using the automated summary creation AND [a link!](https://google.com).

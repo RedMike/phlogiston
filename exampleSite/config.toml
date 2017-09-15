@@ -1,12 +1,11 @@
-baseURL = "https://codingden.net/"
+baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Sample Site"
 theme = "phlogiston"
-disqusShortname = "coding-den"
 
 [Params]
-Image120 = "//gravatar.com/avatar/f2ee31373b0bafccc33548db4a5f42db?s=120"
-Image240 = "//gravatar.com/avatar/f2ee31373b0bafccc33548db4a5f42db?s=240"
+Image120 = "//gravatar.com/avatar/abc?s=120"
+Image240 = "//gravatar.com/avatar/abc?s=240"
 Description = """Add a description here about yourself, your projects, or your page. You can even add a whole load of text so it ends up splitting across multiple lines like this. Of course too many makes it look a bit busy, so don't go overboard.
 
 Add multiple paragraphs, or even a list:
@@ -18,25 +17,18 @@ Add multiple paragraphs, or even a list:
 Navbar = true
 NavbarCategories = ["post", "project"]
 FrontPageCategories = ["post"]
-GoogleAnalyticsCode = "UA-100000000-1"
 
 [[Params.socialIcons]]
   iconClass = "fa fa-github-square"
-  url = "https://github.com/RedMike"
+  url = "https://github.com/Example"
 
 [[Params.socialIcons]]
   iconClass = "fa fa-twitter-square"
-  url = "https://twitter.com/MikeRedhorse"
+  url = "https://twitter.com/Example"
 
 [[Params.socialIcons]]
   iconClass = "fa fa-youtube-square"
-  url = "https://www.youtube.com/channel/UCf-SN9h5_sEC0EF9KTWZFKw"
+  url = "https://www.youtube.com/channel/abc"
 
 [[Params.customJs]]
   url = "https://use.fontawesome.com/5091388bd8.js"
-
-[[Params.customJs]]
-  url = "/js/temp.js"
-
-[[Params.customCss]]
-  url = "/css/custom.css"

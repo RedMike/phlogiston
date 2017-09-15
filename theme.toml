@@ -1,14 +1,11 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Phlogiston"
 license = "MIT"
 licenselink = "https://github.com/RedMike/phlogiston/blob/master/LICENSE.md"
-description = "Hugo theme for a very simple portfolio-like website. Strives to support sections of custom code for user-specific stats/visualisations/etc."
+description = "Phlogiston is a simple website template built for portfolio/blog websites. Its main goal is to provide a good base to start off from for user modifications that correspond to your own use cases."
 homepage = "https://github.com/RedMike/phlogiston"
-tags = []
-features = []
-min_version = "0.26"
+tags = ["blog", "simple", "minimal", "responsive"]
+features = ["blog", "disqus", "responsive"]
+min_version = 0.19
 
 [author]
   name = "Mike Roibu"
