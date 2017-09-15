@@ -6,7 +6,7 @@ Phlogiston is a simple website template built for portfolio/blog websites. Its m
 
 This theme was created from scratch, with responsiveness and modern HTML features in mind.
 
-![screenshot](screenshot) ![screenshot-mobile](screenshot-mobile)
+![screenshot](https://raw.githubusercontent.com/RedMike/phlogiston/master/images/screenshot.png)
 
 
 ## Features
@@ -115,7 +115,3 @@ The above option allows you to control which categories are shown on the main pa
 ## License
 
 This theme is released under the MIT license.
-
-
-[screenshot]: https://raw.githubusercontent.com/RedMike/phlogiston/master/images/screenshot.png
-[screenshot-mobile]: https://raw.githubusercontent.com/RedMike/phlogiston/master/images/screenshot-mobile.png
